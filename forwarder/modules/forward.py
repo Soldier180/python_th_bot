@@ -10,7 +10,8 @@ from forwarder.utils import get_source, get_destenation
 
 async def send_message(message: Message, chat_id: int) -> Union[MessageId, Message]:
     if REMOVE_TAG:
-        return await message.copy(chat_id)
+        pass
+        //return await message.copy(chat_id)
     return await message.forward(chat_id)
 
 
